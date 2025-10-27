@@ -1,8 +1,8 @@
 
 import { GoogleLogin, type CredentialResponse } from "@react-oauth/google";
-import { jwtDecode, JwtPayload } from "jwt-decode";
+import {jwtDecode} from "jwt-decode";
+import type { JwtPayload } from "jwt-decode";
 import type { Profile } from "../types/type";
-
 
 interface GoogleJwtPayload extends JwtPayload {
   name?: string;
